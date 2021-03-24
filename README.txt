@@ -1,4 +1,4 @@
-LORENZE SYSTEM
+LORENZ SYSTEM
 v.x = A * (p.y - p.x);
 v.y = p.x * (O - p.z) - p.y;
 v.z = p.x * p.y - C * p.z;
