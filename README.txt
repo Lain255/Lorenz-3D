@@ -23,18 +23,18 @@ D - move absolutly right
 E - move absolutly up
 Q - move absolutly down
 
-U - increases A in lorenze equasion
-J - decreases A in lorenze equasion
-I - increases O in lorenze equasion
-K - decreases O in lorenze equasion
-O - increases C in lorenze equasion
-L - decreases C in lorenze equasion
+U - increases A in lorenz equasion
+J - decreases A in lorenz equasion
+I - increases O in lorenz equasion
+K - decreases O in lorenz equasion
+O - increases C in lorenz equasion
+L - decreases C in lorenz equasion
 
 T - slow down time
 G - speed up time
 P - pause time
 
-R - reset camera and lorenze system
+R - reset camera and lorenz system
 R+CTRL - reset all points to source cube
 
 F - toggle free fly mode (WARNING EXPERIMENTAL)
