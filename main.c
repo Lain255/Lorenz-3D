@@ -56,8 +56,8 @@ int main(int argc, char **argv)
         SDL_RENDERER_ACCELERATED || SDL_RENDERER_PRESENTVSYNC
     );
 
-    V3 particals[numParticles];
-    SDL_FPoint points[numParticles];
+    V3* particals = malloc(sizeof(V3)*numParticles);
+    SDL_FPoint* points = malloc(sizeof(SDL_FPoint)*numParticles);
     V3 c = {0,0,0};
     double theta = 0;
     double phi = 0;
@@ -181,6 +181,8 @@ int main(int argc, char **argv)
         SDL_RenderPresent(renderer);
     }
 
+    free(particals);
+    free(points);
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);  //closes window
     SDL_Quit();
