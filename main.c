@@ -127,13 +127,13 @@ int main(int argc, char **argv)
         quit = quit || keyboard[SDL_SCANCODE_ESCAPE];
         turbo = 1 + 4*keyboard[SDL_SCANCODE_LSHIFT];
         
-        double right = 0.1*turbo*(keyboard[SDL_SCANCODE_D] - keyboard[SDL_SCANCODE_A]);
-        double up = 0.1*turbo*(keyboard[SDL_SCANCODE_E] - keyboard[SDL_SCANCODE_Q]);
+        double right   = 0.1*turbo*(keyboard[SDL_SCANCODE_D] - keyboard[SDL_SCANCODE_A]);
+        double up      = 0.1*turbo*(keyboard[SDL_SCANCODE_E] - keyboard[SDL_SCANCODE_Q]);
         double forward = 0.1*turbo*(keyboard[SDL_SCANCODE_W] - keyboard[SDL_SCANCODE_S]);
 
-        c.x += (forward*cosPhi*sinTheta) + (-up*sinPhi*sinTheta) + (right*cosTheta);    
-        c.y += (forward*sinPhi) + (up*cosPhi);
-        c.z += (forward*cosPhi*cosTheta) + (-up*sinPhi*cosTheta) + (-right*sinTheta);
+        c.x +=  (forward*cosPhi*sinTheta) + (up*sinPhi*sinTheta) +  (right*cosTheta);    
+        c.y += (-forward*sinPhi)          + (up*cosPhi);
+        c.z +=  (forward*cosPhi*cosTheta) + (up*sinPhi*cosTheta) + (-right*sinTheta);
         
         A += 0.1*turbo*(keyboard[SDL_SCANCODE_U] - keyboard[SDL_SCANCODE_J]);
         B += 0.1*turbo*(keyboard[SDL_SCANCODE_I] - keyboard[SDL_SCANCODE_K]);
