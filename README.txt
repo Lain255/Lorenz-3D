@@ -8,6 +8,8 @@ escape key - quit
 control key - amplifies the effects of most controls
 
 mouse movement - controls cameras direction
+X - increase FOV
+Z - decrease FOV
 
 S - move backwards
 W - move forewards
@@ -23,8 +25,8 @@ K - decreases O in lorenz equasion
 O - increases C in lorenz equasion
 L - decreases C in lorenz equasion
 
-T - slow down time
-G - speed up time
+T - slow down time (EFFECTS DIFFERENTIALS)
+G - speed up time (EFFECTS DIFFERENTIALS)
 F - pause time
 
 R - reset lorenz system
