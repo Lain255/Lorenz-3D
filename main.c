@@ -35,7 +35,7 @@ int is_outbound(V3 a)
 }
 
 const double PI = 3.1415926;
-const int numParticles = 1000000;
+const int numParticles = 100000;
 
 //lorenz constants
 double A = 10.0;
